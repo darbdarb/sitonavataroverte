@@ -1,3 +1,4 @@
+//Disable Avatar collision first in AVATAR app, click the sliders looking icon top right :)
 function keyPressEvent(event) {
     if (event.text === "j" || event.text === "J") {
         MyAvatar.beginSit(Vec3.sum(MyAvatar.position, { x: 0, y: 0.25, z: 0 }), MyAvatar.orientation);
