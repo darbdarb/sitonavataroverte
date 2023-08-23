@@ -11,7 +11,7 @@ function keyPressEvent(event) {
                 var closestAvatarUUID = avatars[i];
                 // Exclude the current avatar's sessionUUID from the check
                 if (sessionUUID !== closestAvatarUUID) {
-                    MyAvatar.setParentID(sessionUUID);
+                    MyAvatar.setParentID(closestAvatarUUID);
                     Camera.mode = "first person";
                     print("Sitting on: " + strippedString);
                 } else {
